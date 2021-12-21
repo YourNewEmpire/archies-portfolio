@@ -1,4 +1,4 @@
-const colors = require('tailwindcss/colors')
+const colors = require("tailwindcss/colors");
 
 module.exports = {
   content: [
@@ -7,7 +7,31 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: { display: ["Oswald"], body: ["Open Sans"] , title: ['Bebas Neue'] },
+      fontSize: {
+        xs: ".75rem",
+        sm: ".875rem",
+        tiny: ".875rem",
+        base: "1rem",
+        lg: "1.125rem",
+        xl: "1.25rem",
+        "2xl": "1.5rem",
+        "3xl": "1.875rem",
+        "4xl": "2.25rem",
+        "5xl": "3rem",
+        "6xl": "4rem",
+        "7xl": "5rem",
+        "8xl": "6rem",
+        "9xl": "7rem",
+      },
+      fontFamily: {
+        display: ["Oswald"],
+        body: ["Oxygen"],
+        title: ["Bebas Neue"],
+      },
+      backgroundImage: {
+        'the-coast': "url('/thecoast.png')",
+      
+      },
       colors: {
         gray: colors.gray,
         slate: colors.slate,
@@ -22,7 +46,7 @@ module.exports = {
         purple: colors.violet,
         amber: colors.amber,
         fuchsia: colors.fuchsia,
-        moralis: '#c5fa00',
+        moralis: "#c5fa00",
       },
       keyframes: {
         bottomShadow: {
@@ -63,20 +87,17 @@ module.exports = {
           },
 
           "50%": {
-            transform: "translateX(5%)",
-          
+            transform: "translateX(20%)",
           },
-  
         },
         wiggle: {
           "0%, 100%": { transform: "rotate(-3deg)" },
-          "50%": { transform: "rotate(5deg)",},
+          "50%": { transform: "rotate(5deg)" },
         },
-      
       },
       animation: {
         wiggle: "wiggle 2s ease-in-out ",
-        pop: "pop 2s ease-in-out  ",
+        pop: "pop 0.75s ease-in-out infinite ",
         spin: "spin infinite linear  8s",
         spinFast: " spin infinite linear 3s",
         shadowGlow: "shadowGlow 2s alternate infinite ease-in-out",
