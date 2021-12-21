@@ -18,7 +18,6 @@ const Card = ({ title, body, link, img }: CardProps) => {
   const onCardLeave = () => {
     setCardHovered(false);
   };
-
   return (
     <Link href={link} passHref>
       <div
@@ -28,7 +27,7 @@ const Card = ({ title, body, link, img }: CardProps) => {
 grid grid-flow-row grid-cols-1 grid-rows-8  justify-center items-center
 gap-2 md:gap-8 lg:gap-6
 transition duration-200
- rounded-md
+rounded-md
 ring-emerald-300
 hover:ring-2
 hover:shadow-xl 
