@@ -28,9 +28,9 @@ module.exports = {
         body: ["Oxygen"],
         title: ["Bebas Neue"],
       },
-      backgroundImage: {
+      backgroundImage:  {
         'the-coast': "url('/thecoast.png')",
-      
+        'projects-card' : "url('/projectscard.png')"
       },
       colors: {
         gray: colors.gray,
