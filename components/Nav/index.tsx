@@ -40,23 +40,23 @@ const Nav = () => {
   //todo - clean up after setting up responsive dropdown
   return (
     <div
-      className="
+      className="z-50
       bg-gradient-to-br from-emerald-300 via-emerald-500 to-emerald-700 
       px-0 lg:px-1 rounded-r-lg 
       text-slate-700 text-left
       text-5xl font-semibold
-      flex flex-col items-center justify-between
+      flex flex-col items-center justify-between 
       "
     >
       <nav
         className="
-ring-4 w-full
-                   "
+           w-full font-body
+      "
       >
         <Link href="/" passHref>
           <motion.a
             whileHover={{ translateX: 15 }}
-            className="block py-8 px-8 ring-inset ring-slate-600 text-center"
+            className="block py-8 px-8  text-center"
             href="/"
           >
             <div className="flex items-center justify-center">
@@ -69,14 +69,14 @@ ring-4 w-full
           <Link key={index} href={item.link} passHref>
             <motion.a
               whileHover={{ translateX: 15 }}
-              className="block py-8 px-8 ring-inset ring-slate-600 hover:cursor-pointer "
+              className="block py-8 px-8 hover:cursor-pointer "
             >
               {item.text}
             </motion.a>
           </Link>
         ))}
       </nav>
-
+wip
       <div className="ring-4 grid grid-flow-row grid-cols-4 gap-8">
         <MailIcon height={50} width={50} />
         <MailIcon height={50} width={50} />
