@@ -18,7 +18,7 @@ const Layout = ({ children }: Childs): JSX.Element => {
         <link rel="preconnect" href="https://fonts.gstatic.com" />
 
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap"
           rel="stylesheet"
         />
         <link
