@@ -49,12 +49,10 @@ const Home: NextPage = () => {
           </button>
         </div>
         <div className="col-span-4 p-4 flex items-center justify-center rounded-lg">
-          <Image
+          <img
             alt="profile-picture"
-            src="/indoors-picture.jpg "
-            width={300}
-            height={300}
-            className="rounded-full"
+            src="/indoors-picture.jpg"
+            className="rounded-full w-64 h-64"
           />
         </div>
         <div className="col-span-12 font-body text-emerald-300 text-3xl ">
