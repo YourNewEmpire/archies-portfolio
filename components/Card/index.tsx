@@ -32,14 +32,20 @@ ring-emerald-300
 hover:ring-2
 hover:shadow-xl 
 hover:cursor-pointer
-bg-${img} bg-center bg-cover
+${img} bg-cover bg-center
 `}
       >
         <div className="row-span-6 flex justify-center items-center ">
           <h1 className="text-5xl text-center font-title">{title}</h1>
         </div>
         <div className="w-full rounded-b-md bg-slate-800 row-span-2">
-          <div className="flex flex-row space-x-2 items-center justify-center text-center subpixel-antialiased text-xl ">
+          <div
+            className="
+          flex flex-row space-x-2 
+          items-center justify-center 
+          text-center text-xl
+          subpixel-antialiased"
+          >
             <p>{body}</p>{" "}
             <ArrowRightIcon
               className={cardHovered ? "animate-pop" : "animate-none"}
