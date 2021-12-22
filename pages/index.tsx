@@ -2,7 +2,6 @@ import type { NextPage } from "next";
 import Image from "next/image";
 import Card from "../components/Card";
 
-
 const Home: NextPage = () => {
   const cardItems = [
     {
@@ -49,9 +48,11 @@ const Home: NextPage = () => {
           </button>
         </div>
         <div className="col-span-4 p-4 flex items-center justify-center rounded-lg">
-          <img
+          <Image
             alt="profile-picture"
-            src="/indoors-picture.jpg"
+            src={"/indoors-picture.png"}
+            width={400}
+            height={400}
             className="rounded-full w-64 h-64"
           />
         </div>
