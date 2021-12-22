@@ -44,13 +44,14 @@ const Nav = () => {
       bg-gradient-to-br from-emerald-300 via-emerald-500 to-emerald-700 
       px-0 lg:px-1 rounded-r-lg 
       text-slate-700 text-left
-      text-5xl font-semibold
+      text-lg md:text-2xl xl:text-4xl font-semibold
       flex flex-col items-center justify-between 
       "
     >
       <nav
         className="
            w-full font-body
+           
       "
       >
         <Link href="/" passHref>
