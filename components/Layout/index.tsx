@@ -11,7 +11,7 @@ const variants = {
 };
 const Layout = ({ children }: Childs): JSX.Element => {
   return (
-    <div className="  bg-slate-700">
+    <div className="bg-slate-700">
       <Head>
         <title>Archies Portfolio</title>
         <link rel="icon" href="/icon.ico" />
@@ -29,7 +29,7 @@ const Layout = ({ children }: Childs): JSX.Element => {
 
       <div className="relative min-h-screen flex">
         <Nav />
-        <div className="p-10 flex-1 ">{children}</div>
+        <div className="p-10 flex-1 bg-slate-700">{children}</div>
       </div>
     </div>
   );
