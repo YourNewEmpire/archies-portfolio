@@ -5,8 +5,21 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
+
   theme: {
     extend: {
+      opacity:{
+        '10': '0.1',
+        '20': '0.2',
+        '30': '0.3',
+        '40': '0.4',
+        '50': '0.5',
+        '60': '0.6',
+        '70': '0.7',
+        '80': '0.8',
+        '90': '0.90',
+      },
+      
       fontSize: {
         xs: ".75rem",
         sm: ".875rem",
@@ -28,9 +41,9 @@ module.exports = {
         body: ["Oxygen"],
         title: ["Bebas Neue"],
       },
-      backgroundImage:  {
-        'the-coast': "url('/thecoast.png')",
-        'projects-card' : "url('/projectscard.png')"
+      backgroundImage: {
+        "the-coast": "url('/thecoast.png')",
+        "projects-card": "url('/projectscard.png')",
       },
       colors: {
         gray: colors.gray,
@@ -49,38 +62,6 @@ module.exports = {
         moralis: "#c5fa00",
       },
       keyframes: {
-        bottomShadow: {
-          "0%": { boxShadow: "-5px  0px 0px -5px  rgba(0, 0, 0, 0.1)" },
-          "25%": { boxShadow: "-5px  2px 2px -5px  rgba(0, 0, 0, 0.1)" },
-          "50%": { boxShadow: "-5px  4px 4px -5px rgba(0, 0, 0, 0.1) " },
-          "75%": { boxShadow: "0px 8px 8px 0px rgba(0, 0, 0, 0.1) " },
-          " 100%": { boxShadow: "0px 12px 12px 0px rgba(0, 0 , 0, 0.1)" },
-        },
-        shadowGlow: {
-          "0%": { boxShadow: "0 1px 1px 0px rgba(0, 0, 0, 0.1)" },
-          "25%": { boxShadow: "0 5px 5px 0px #0c4a6e " },
-          "50%": { boxShadow: "0 7px 7px 0px #1e40af " },
-          "75%": { boxShadow: "0 9px 9px 0px #60a5fa " },
-          " 100%": { boxShadow: "0 9px 9px 0px #7fb4f5 " },
-        },
-        shadowGlowMd: {
-          "0%": { boxShadow: "0 1px 1px 0px rgba(0, 0, 0, 0.1)" },
-          "25%": { boxShadow: "0 5px 5px 0px #0c4a6e " },
-          "50%": { boxShadow: "0 7px 7px 0px #1e40af " },
-          "75%": { boxShadow: "0 9px 9px 0px #60a5fa " },
-          " 100%": { boxShadow: "0 9px 9px 5px #7fb4f5 " },
-        },
-        shadowGlowLg: {
-          "0%": { boxShadow: "0 1px 1px 0px rgba(0, 0, 0, 0.1)" },
-          "25%": { boxShadow: "0 5px 5px 0px #0c4a6e " },
-          "50%": { boxShadow: "0 7px 7px 0px #1e40af " },
-          "75%": { boxShadow: "0 9px 9px 0px #60a5fa " },
-          " 100%": { boxShadow: "0 9px 9px 10px #7fb4f5 " },
-        },
-        bgShift: {
-          from: { "background-color": "#1e40af" },
-          " to": { "background-color": "#60a5fa" },
-        },
         pop: {
           "0%, 100%": {
             transform: "translateX(0%)",
