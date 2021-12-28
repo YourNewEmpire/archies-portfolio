@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { ArrowRightIcon } from "@heroicons/react/solid";
+import useHovered from "../../hooks/useHovered";
 interface CardProps {
   title: string;
   body: string;
@@ -9,31 +10,23 @@ interface CardProps {
   img?: string;
 }
 const Card = ({ title, body, link, img }: CardProps) => {
-  //* When span anchor title is hovered, save it as true, to stop anchor animation.
-  const [cardHovered, setCardHovered] = useState(false);
-
-  const onCardEnter = () => {
-    setCardHovered(true);
-  };
-  const onCardLeave = () => {
-    setCardHovered(false);
-  };
+  const { isHovered, setHovered, onEnter, onLeave } = useHovered(false);
   return (
     <Link href={link} passHref>
       <div
-        onMouseEnter={() => onCardEnter()}
-        onMouseLeave={() => onCardLeave()}
+        onMouseEnter={() => onEnter()}
+        onMouseLeave={() => onLeave()}
         className={`
-grid grid-flow-row grid-cols-1 grid-rows-8  justify-center items-center
-gap-2 md:gap-8 lg:gap-6
-transition duration-200
-rounded-md
-ring-emerald-300
-hover:ring-2
-hover:shadow-xl 
-hover:cursor-pointer
-${img} bg-cover bg-center
-`}
+          grid grid-flow-row grid-cols-1 grid-rows-8  justify-center items-center
+          gap-2 md:gap-8 lg:gap-6
+          transition duration-200
+          rounded-md
+          ring-emerald-300
+          hover:ring-2
+          hover:shadow-xl 
+          hover:cursor-pointer
+          ${img} bg-cover bg-center
+          `}
       >
         <div className="row-span-6 flex justify-center items-center ">
           <h1 className="text-5xl text-center font-title">{title}</h1>
@@ -48,7 +41,7 @@ ${img} bg-cover bg-center
           >
             <p>{body}</p>{" "}
             <ArrowRightIcon
-              className={cardHovered ? "animate-pop" : "animate-none"}
+              className={isHovered ? "animate-pop" : "animate-none"}
               height={25}
               width={25}
             />
