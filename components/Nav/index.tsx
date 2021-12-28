@@ -77,13 +77,7 @@ const Nav = () => {
           </Link>
         ))}
       </nav>
-wip
-      <div className="ring-4 grid grid-flow-row grid-cols-4 gap-8">
-        <MailIcon height={50} width={50} />
-        <MailIcon height={50} width={50} />
-        <MailIcon height={50} width={50} />
-        <MailIcon height={50} width={50} />
-      </div>
+
     </div>
   );
 };
