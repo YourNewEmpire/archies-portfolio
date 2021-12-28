@@ -18,7 +18,7 @@ const Home: NextPage = () => {
     },
     {
       title: "Experience",
-      body: "View My Projects",
+      body: "View My Experience",
       link: "/experience",
       img: "projects-card",
     },
@@ -32,7 +32,7 @@ const Home: NextPage = () => {
   return (
     <div className="flex flex-col items-center justify-center">
       <div className="m-12">
-        <h1 className="text-center text-8xl text-emerald-300 font-title">
+        <h1 className="text-center text-xl md:text-4xl lg:text-5xl xl:text-8xl text-emerald-300 font-title">
           Hi I&#39;m Archie, a Web3 Developer!
         </h1>
       </div>
@@ -42,9 +42,11 @@ const Home: NextPage = () => {
           backends for Web3 startups. You need to ship a DAPP quickly? I have
           you covered. I am mostly self-taught, though I have obtained certifications for Web3 development.
           <button className="
-           w-64 rounded-full m-12 
-          bg-emerald-300 text-slate-700 transition duration-200 shadow-md hover:shadow-emerald-400">
-            CONTACT wip
+           w-64 m-12 rounded-2xl font-semibold
+          bg-emerald-300 text-slate-700 
+          transition duration-200 
+          shadow-md hover:shadow-emerald-400">
+            CONTACT
           </button>
         </div>
         <div className="col-span-4 p-4 flex items-center justify-center rounded-lg">
