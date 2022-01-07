@@ -11,29 +11,8 @@ import ContactButtons from "../components/ContactForm/ContactButtons";
 
 const Home: NextPage = () => {
   const [modalOpen, setModalOpen] = useState(false);
-  console.log(introObject);
   const close = () => setModalOpen(false);
   const open = () => setModalOpen(true);
-  const cardItems = [
-    {
-      title: "About Me",
-      body: "Learn About Me ",
-      link: "/aboutme",
-      img: "bg-about-card",
-    },
-    {
-      title: "Projects",
-      body: "View My Projects",
-      link: "/projects",
-      img: "bg-projects-card",
-    },
-    {
-      title: "Contact",
-      body: "Methods Of Contact",
-      link: "/contact",
-      img: "bg-contact-card",
-    },
-  ];
   return (
     <div className="flex flex-col items-center justify-center">
       <div className="m-12">
@@ -44,6 +23,7 @@ const Home: NextPage = () => {
       <div className="grid grid-flow-row grid-cols-8 lg:grid-cols-12 gap-8 lg:gap-12 xl:gap-20 justify-center items-center">
         <div className="col-span-6 lg:col-span-8 font-body text-emerald-300 text-lg xl:text-3xl text-center flex flex-col items-center justify-center">
           {introObject.desc}
+
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
