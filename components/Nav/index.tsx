@@ -1,46 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import { Fragment } from "react";
-import { HomeIcon, MailIcon } from "@heroicons/react/solid";
+import { HomeIcon } from "@heroicons/react/solid";
 import { motion } from "framer-motion";
-import { AnimateSharedLayout } from "framer-motion";
-
+import navItems from "../../lib/content/navItems";
 type listItem = {
-  id: number;
   text: string;
   link: string;
 };
 
 const Nav = () => {
   const router = useRouter();
-  const listItems: listItem[] = [
-    {
-      id: 1,
-      text: "About Me",
-      link: "/aboutme",
-    },
-    {
-      id: 2,
-      text: "Projects",
-      link: "/projects",
-    },
-    {
-      id: 3,
-      text: "Experience",
-      link: "/experience",
-    },
-    {
-      id: 4,
-      text: "Contact",
-      link: "/contact",
-    },
-  ];
 
   //todo - clean up after setting up responsive dropdown
   return (
     <div
-      className="z-50
+      className="z-30 
       bg-gradient-to-br from-emerald-300 via-emerald-500 to-emerald-700 
       px-0 lg:px-1 rounded-r-lg 
       text-slate-700 text-left
@@ -50,8 +25,7 @@ const Nav = () => {
     >
       <nav
         className="
-           w-full font-body
-           
+           w-full font-body  
       "
       >
         <Link href="/" passHref>
@@ -66,7 +40,7 @@ const Nav = () => {
           </motion.a>
         </Link>
 
-        {listItems.map((item, index) => (
+        {navItems.map((item, index) => (
           <Link key={index} href={item.link} passHref>
             <motion.a
               whileHover={{ translateX: 15 }}
@@ -77,7 +51,6 @@ const Nav = () => {
           </Link>
         ))}
       </nav>
-
     </div>
   );
 };
