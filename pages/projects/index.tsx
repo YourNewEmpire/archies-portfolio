@@ -43,7 +43,7 @@ const Projects = ({ projects }: { projects: IProject[] }) => {
               {proj.projectName}
             </h1>
             <div className="h-1 w-full bg-emerald-500 rounded-sm"></div>
-            <p className="text-lg text-emerald-300">
+            <p className="text-lg text-emerald-300 ">
               {proj.projectDescription}
             </p>
             <div className="flex flex-row space-x-2 justify-start items-center max-w-fit text-sm">

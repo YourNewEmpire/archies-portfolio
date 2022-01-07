@@ -2,14 +2,11 @@ import React from "react";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { GraphQLClient, gql } from "graphql-request";
 import { IProject } from "../../interfaces/projects";
-import Link from "next/link";
-
+import projItems from "../../lib/content/projectItems"
 const cmsURL = process.env.GRAPH_CMS;
 const client = new GraphQLClient(cmsURL ? cmsURL : "");
 
 const Project = ({ project }: { project: IProject }) => {
-  const projItems = ["description", "features", "tools", "links"];
-  console.log(project.projectURLs);
   return (
     <div>
       <div className="grid grid-flow-row grid-cols-1 items-left justify-center">
