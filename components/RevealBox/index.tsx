@@ -13,7 +13,7 @@ const RevealBox = ({ children }: IRevealBox) => {
         x: 0,
         y: 0,
         transition: {
-          delay: 0.1,
+          delay: 0.2,
           duration: 1.1,
         },
       });
