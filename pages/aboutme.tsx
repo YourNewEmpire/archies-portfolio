@@ -5,8 +5,10 @@ import RevealBox from "../components/RevealBox";
 import certs from "../lib/content/about/certs";
 import MoreDetails from "../components/Buttons/MoreDetails";
 import { FaExternalLinkAlt } from "react-icons/fa";
-const AboutMe: NextPage = () => {
 
+import { SiWeb3Dotjs } from "react-icons/si";
+
+const AboutMe: NextPage = () => {
   return (
     <>
       <div className="flex flex-col items-center justify-start min-h-screen">
@@ -70,7 +72,8 @@ const AboutMe: NextPage = () => {
                 key={index}
                 className="flex flex-col justify-center items-center space-y-2 "
               >
-                {skill.icon}
+                <div className="w-24 h-24 xl:w-40 xl:h-40">{skill.icon}</div>
+
                 <h1 className="text-lg xl:text-4xl text-emerald-300 font-semibold">
                   {skill.name}
                 </h1>
