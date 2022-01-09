@@ -13,6 +13,26 @@ const Home: NextPage = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const close = () => setModalOpen(false);
   const open = () => setModalOpen(true);
+  const cardItems = [
+    {
+      title: "About Me",
+      body: "Learn About Me ",
+      link: "/aboutme",
+      img: "bg-about-card",
+    },
+    {
+      title: "Projects",
+      body: "View My Projects",
+      link: "/projects",
+      img: "bg-projects-card",
+    },
+    {
+      title: "Contact",
+      body: "Methods Of Contact",
+      link: "/contact",
+      img: "bg-contact-card",
+    },
+  ];
   return (
     <div className="flex flex-col items-center justify-center">
       <div className="m-12">
@@ -64,7 +84,7 @@ const Home: NextPage = () => {
         </div>
         <div className="col-span-12 font-body text-emerald-300 text-3xl ">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 xl:gap-8">
-            {introObject.cardItems.map((item, index) => (
+            {cardItems.map((item, index) => (
               <div key={index}>
                 <Card {...item} />
               </div>
