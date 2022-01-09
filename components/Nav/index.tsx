@@ -4,10 +4,6 @@ import Link from "next/link";
 import { HomeIcon } from "@heroicons/react/solid";
 import { motion } from "framer-motion";
 import navItems from "../../lib/content/navItems";
-type listItem = {
-  text: string;
-  link: string;
-};
 
 const Nav = () => {
   const router = useRouter();
@@ -25,7 +21,7 @@ const Nav = () => {
     >
       <nav
         className="
-           w-full font-body  
+           w-full font-body  sticky top-0
       "
       >
         <Link href="/" passHref>
