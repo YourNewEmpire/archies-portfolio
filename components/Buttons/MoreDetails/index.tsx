@@ -4,9 +4,10 @@ import { ArrowRightIcon } from "@heroicons/react/solid";
 
 export interface IMoreDetails {
   href: string;
+  text?: string;
 }
 
-const MoreDetails = ({ href }: IMoreDetails) => {
+const MoreDetails = ({ href, text }: IMoreDetails) => {
   const { isHovered, setHovered, onEnter, onLeave } = useHovered(false);
 
   return (
@@ -23,7 +24,7 @@ const MoreDetails = ({ href }: IMoreDetails) => {
       href={href}
     >
       {" "}
-      <p>More Details</p>
+      <p>{text ? text : "More Details"}</p>
       <ArrowRightIcon
         className={isHovered ? "animate-pop" : "animate-none"}
         height={25}
