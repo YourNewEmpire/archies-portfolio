@@ -8,7 +8,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
   const client = new GraphQLClient(cmsURL ? cmsURL : "");
   const query = gql`
     query MyQuery {
-      projects(orderBy: createdAt_ASC) {
+      projects(orderBy: createdAt_DESC) {
         projectSlug
         projectName
         projectDescription
