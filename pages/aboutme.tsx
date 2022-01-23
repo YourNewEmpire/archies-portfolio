@@ -13,7 +13,7 @@ const AboutMe: NextPage = () => {
     <>
       <div className="flex flex-col items-center justify-start min-h-screen">
         <div className="m-12">
-          <h1 className="text-center text-xl md:text-4xl lg:text-5xl xl:text-8xl text-emerald-300 font-title">
+          <h1 className="text-center text-2xl md:text-4xl lg:text-5xl xl:text-8xl text-emerald-300 font-title">
             {" "}
             About Me!
           </h1>
