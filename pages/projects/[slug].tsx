@@ -29,13 +29,16 @@ const Project = ({ project }: { project: IProject }) => {
             Features
           </h1>
           <div className="h-1 w-full bg-emerald-500 rounded-sm"></div>
-          {project.projectFeatures.map((feat, index) => (
-            <div key={index}>
-              <p className="text-sm lg:text-base xl:text-2xl text-emerald-300">
+          <ul className="list-disc list-inside">
+            {project.projectFeatures.map((feat, index) => (
+              <li
+                className="text-sm lg:text-base xl:text-2xl text-emerald-300"
+                key={index}
+              >
                 {feat}
-              </p>
-            </div>
-          ))}
+              </li>
+            ))}
+          </ul>
         </div>
         <div className=" m-12" id="tools">
           <h1 className="text-left text-3xl lg:text-5xl xl:text-6xl text-emerald-300 font-title">
