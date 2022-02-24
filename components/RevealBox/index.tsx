@@ -13,11 +13,22 @@ const RevealBox = ({ children }: IRevealBox) => {
         x: 0,
         y: 0,
         transition: {
-          delay: 0.2,
+          delay: 0.3,
+          duration: 1.1,
+        },
+      });
+    } else {
+      animationControl.start({
+        opacity: 0,
+        x: 0,
+        y: 0,
+        transition: {
+          delay: 0.3,
           duration: 1.1,
         },
       });
     }
+    //! Adding AnimationControl to deps will stop intended behaviour
   }, [inView]);
   return (
     <div ref={ref}>
