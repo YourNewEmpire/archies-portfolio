@@ -11,18 +11,6 @@ const ContactButtons = () => {
 
       <div className="grid grid-flow-row gap-4 p-2 font-body text-emerald-300 text-lg xl:text-3xl text-center items-center justify-center rounded-lg ">
         <div className=" flex flex-row justify-center items-center">
-          <p className="p-6">Email me here:</p>
-          <motion.a
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            className="w-28 h-28  "
-            href="mailto:archiesmyth26@googlemail.com"
-          >
-            <MailIcon />
-          </motion.a>
-        </div>
-
-        <div className=" flex flex-row justify-center items-center">
           <p className="p-6">Connect + Message me here:</p>
           <motion.a
             target="blank"
@@ -45,7 +33,6 @@ const ContactButtons = () => {
             <AiFillTwitterSquare size={100} />
           </motion.a>
         </div>
-        <h1 className="text-red-300 text-base text-center">Message Form Coming Soon</h1>
       </div>
     </div>
   );
