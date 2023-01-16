@@ -1,12 +1,11 @@
 /** @type {import('next').NextConfig} */
-const withImages = require('next-images')
+const withImages = require("next-images");
 module.exports = {
   images: {
-    disableStaticImages: true,
     domains: ["images.unsplash.com", "ipfs.io/ipfs/", "ipfs.io"],
+    formats: ["image/webp"],
   },
   reactStrictMode: true,
-  basePath: "",
 };
 
-module.exports = withImages()
+module.exports = withImages();

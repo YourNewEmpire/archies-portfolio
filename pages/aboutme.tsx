@@ -4,9 +4,6 @@ import skillList from "../lib/content/about/skills";
 import RevealBox from "../components/RevealBox";
 import certs from "../lib/content/about/certs";
 import MoreDetails from "../components/Buttons/MoreDetails";
-import { FaExternalLinkAlt } from "react-icons/fa";
-
-import { SiWeb3Dotjs } from "react-icons/si";
 
 const AboutMe: NextPage = () => {
   return (
@@ -36,9 +33,7 @@ const AboutMe: NextPage = () => {
             <h1 className="text-4xl text-emerald-300 font-semibold">
               Archie Smyth
             </h1>
-            <p className="text-lg text-emerald-500">
-              Full Stack Web3 Developer
-            </p>
+            <p className="text-lg text-emerald-500">Full Stack Web Developer</p>
           </div>
           <div
             className="col-span-1 xl:col-span-8 font-body 
@@ -49,9 +44,9 @@ const AboutMe: NextPage = () => {
           >
             <p>
               Hi, I am Archie, currently working on personal projects to fulfill
-              my ambition on becoming a full-stack web3 developer. Scroll to
-              find out more about my skills, experience, qualifications,
-              interests and more.
+              my ambition on becoming a full-stack web developer. Scroll to find
+              out more about my skills, experience, qualifications, interests
+              and more.
             </p>
           </div>
         </div>

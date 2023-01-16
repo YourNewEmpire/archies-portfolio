@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { ArrowRightIcon } from "@heroicons/react/solid";
 import useHovered from "../../hooks/useHovered";
+
 interface CardProps {
   title: string;
   body: string;
@@ -13,7 +14,10 @@ const Card = ({ title, body, link, img }: CardProps) => {
   const { isHovered, setHovered, onEnter, onLeave } = useHovered(false);
   return (
     <Link href={link} passHref>
-      <div className={`${img} bg-cover bg-center rounded-md`}>
+      <div
+        style={{ backgroundImage: `url(${img})` }}
+        className={` bg-cover bg-center rounded-md `}
+      >
         <div
           onMouseEnter={() => onEnter()}
           onMouseLeave={() => onLeave()}

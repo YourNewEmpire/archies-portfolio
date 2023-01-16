@@ -6,33 +6,14 @@ import { MailIcon } from "@heroicons/react/solid";
 import { AiFillLinkedin, AiFillTwitterSquare } from "react-icons/ai";
 import Card from "../components/Card";
 import Modal from "../components/Modal";
-import introObject from "../lib/content/home";
+import { introObject, cardItems } from "../lib/content/home";
 import ContactButtons from "../components/ContactForm/ContactButtons";
 
 const Home: NextPage = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const close = () => setModalOpen(false);
   const open = () => setModalOpen(true);
-  const cardItems = [
-    {
-      title: "About Me",
-      body: "Learn About Me ",
-      link: "/aboutme",
-      img: "bg-about-card",
-    },
-    {
-      title: "Projects",
-      body: "View My Projects",
-      link: "/projects",
-      img: "bg-projects-card",
-    },
-    {
-      title: "Contact",
-      body: "Methods Of Contact",
-      link: "/contact",
-      img: "bg-contact-card",
-    },
-  ];
+
   return (
     <div className="flex flex-col items-center justify-center">
       <div className="m-12">
@@ -74,6 +55,7 @@ const Home: NextPage = () => {
           </AnimatePresence>
         </div>
         <div className="col-span-2 lg:col-span-4 p-4 flex items-center justify-center rounded-lg">
+          {/* //todo - add new picture from mvme site  */}
           <Image
             alt="profile-picture"
             src={"/indoors-picture.png"}

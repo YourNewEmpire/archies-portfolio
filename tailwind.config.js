@@ -41,11 +41,11 @@ module.exports = {
         body: ["Oxygen"],
         title: ["Bebas Neue"],
       },
-      backgroundImage: {
-        "about-card": "url('/aboutcard.png')",
-        "projects-card": "url('/projectscard.png')",
-        "contact-card": "url('/contactcard.png')",
-      },
+      backgroundImage: (theme) => ({
+        "about-card": "url('/img//aboutcard.png')",
+        "projects-card": "url('/img/projectscard.png')",
+        "contact-card": "url('/img/contactcard.png')",
+      }),
       colors: {
         gray: colors.gray,
         slate: colors.slate,
