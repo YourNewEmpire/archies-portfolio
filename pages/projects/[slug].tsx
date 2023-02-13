@@ -2,7 +2,7 @@ import React from "react";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { GraphQLClient, gql } from "graphql-request";
 import { IProject } from "../../interfaces/projects";
-import projItems from "../../lib/content/projectItems"
+import projItems from "../../lib/content/projectItems";
 const cmsURL = process.env.GRAPH_CMS;
 const client = new GraphQLClient(cmsURL ? cmsURL : "");
 
@@ -20,7 +20,7 @@ const Project = ({ project }: { project: IProject }) => {
             Description
           </h1>
           <div className="h-1 w-full bg-emerald-500 rounded-sm"></div>
-          <p className="text-sm lg:text-base xl:text-2xl text-emerald-300">
+          <p className="my-4 text-sm lg:text-base xl:text-2xl text-emerald-300">
             {project.projectDescription}
           </p>
         </div>
@@ -29,7 +29,7 @@ const Project = ({ project }: { project: IProject }) => {
             Features
           </h1>
           <div className="h-1 w-full bg-emerald-500 rounded-sm"></div>
-          <ul className="list-disc list-inside">
+          <ul className="my-4 list-disc list-inside">
             {project.projectFeatures.map((feat, index) => (
               <li
                 className="text-sm lg:text-base xl:text-2xl text-emerald-300"
@@ -45,7 +45,7 @@ const Project = ({ project }: { project: IProject }) => {
             Tools
           </h1>
           <div className="h-1 w-full bg-emerald-500 rounded-sm"></div>
-          <ul className="list-disc list-inside">
+          <ul className="my-4 list-disc list-inside">
             {project.projectTools.map((tool, index) => (
               <li
                 className="text-sm lg:text-base xl:text-2xl text-emerald-300"
@@ -61,7 +61,7 @@ const Project = ({ project }: { project: IProject }) => {
             Related links
           </h1>
           <div className="h-1 w-full bg-emerald-500 rounded-sm"></div>
-          <ul className="list-disc list-inside break-words">
+          <ul className="my-4 list-disc list-inside break-words">
             {project.projectURLs.map((url, index) => (
               <li
                 key={index}
@@ -78,11 +78,13 @@ const Project = ({ project }: { project: IProject }) => {
       <div className="fixed top-16 right-16">
         <ul className=" text-lg text-white space-y-2">
           <h1 className="font-bold text-emerald-300 ">On This Page</h1>
-          {projItems.map((item, index) =>
-          <li key={index}>
-            <a className="hover:text-emerald-300"  href={ "#" + item}>{item}</a>
-          </li>
-          )}
+          {projItems.map((item, index) => (
+            <li key={index}>
+              <a className="hover:text-emerald-300" href={"#" + item}>
+                {item}
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
     </div>
