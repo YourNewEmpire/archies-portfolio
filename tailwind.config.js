@@ -19,7 +19,9 @@ module.exports = {
         80: "0.8",
         90: "0.90",
       },
-
+      gridTemplateColumns: {
+        layout: "200px 1fr",
+      },
       fontSize: {
         xs: ".75rem",
         sm: ".875rem",

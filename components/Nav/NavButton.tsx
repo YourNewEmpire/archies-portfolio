@@ -7,7 +7,7 @@ interface NavButtonProps {
   link: string;
 }
 const NavButton = ({ text, link }: NavButtonProps) => {
-  const { isHovered, setHovered, onEnter, onLeave } = useHovered(false);
+  const { isHovered, onEnter, onLeave } = useHovered(false);
 
   return (
     <div>
@@ -16,7 +16,7 @@ const NavButton = ({ text, link }: NavButtonProps) => {
         <motion.button
           onMouseEnter={() => onEnter()}
           onMouseLeave={() => onLeave()}
-          className="block w-full py-8 px-8 hover:cursor-pointer "
+          className="block w-full py-2 lg:py-8 px-2 lg:px-8  hover:cursor-pointer "
         >
           <p
             className={` text-left transition-all duration-200 ease-in-out  ${

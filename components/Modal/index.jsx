@@ -17,7 +17,6 @@ const dropIn = {
     },
   },
   exit: {
-    y: "100vh",
     opacity: 0,
   },
 };

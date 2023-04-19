@@ -30,7 +30,7 @@ const Projects = ({ projects }: { projects: IProject[] }) => {
   return (
     <div className="flex flex-col items-center justify-center">
       <div className="m-12">
-        <h1 className="text-center text-xl md:text-4xl lg:text-5xl xl:text-8xl text-emerald-300 font-title">
+        <h1 className="text-center text-2xl sm:text-3xl lg:text-5xl xl:text-7xl text-emerald-300 font-title">
           My Projects
         </h1>
       </div>
@@ -45,10 +45,10 @@ const Projects = ({ projects }: { projects: IProject[] }) => {
             <p className="my-4 text-lg text-emerald-300 ">
               {proj.projectDescription}
             </p>
-            <div className=" my-4 flex flex-row space-x-2 justify-start items-center max-w-fit text-sm">
+            <div className=" my-4 flex flex-wrap justify-end items-center text-sm">
               {proj.projectTags.map((item, index) => (
                 <div
-                  className="rounded-lg ring-2 ring-emerald-300 text-emerald-300 bg-slate-700 p-1"
+                  className="rounded-lg m-2 ring-2 ring-emerald-300 text-emerald-300 bg-slate-700 p-1"
                   key={index}
                 >
                   #{item}

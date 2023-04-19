@@ -16,13 +16,14 @@ const Nav = () => {
       bg-gradient-to-br from-emerald-300 via-emerald-500 to-emerald-700 
       rounded-r-lg 
       text-slate-700 text-left
-      text-lg md:text-2xl xl:text-4xl font-semibold
+      text-xs md:text-2xl xl:text-4xl font-semibold
       flex flex-col items-center justify-between 
+      
       "
     >
       <nav
         className="
-           w-full font-body  sticky top-0
+            font-body  sticky top-0
       "
       >
         <Link href="/" passHref>
@@ -30,14 +31,14 @@ const Nav = () => {
           <motion.button
             onMouseEnter={() => onEnter()}
             onMouseLeave={() => onLeave()}
-            className="block w-full py-8 px-8 hover:cursor-pointer "
+            className="block w-full py-2 lg:py-8 lg:px-8 hover:cursor-pointer "
           >
             <div
               className={`flex items-center justify-center transition-all duration-200 ease-in-out  ${
                 isHovered ? "translate-x-[16px]" : ""
               }`}
             >
-              <HomeIcon width={50} height={50} />
+              <HomeIcon className="h-[20px] w-[20px] md:w-[35px] md:h-[35px] lg:w-[50px] lg:h-[50px]" />
             </div>
           </motion.button>
         </Link>
