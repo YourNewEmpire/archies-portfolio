@@ -41,7 +41,7 @@ const Home: NextPage = () => {
             // Only render one component at a time.
             // The exiting component will finish its exit
             // animation before entering component is rendered
-            exitBeforeEnter={true}
+            mode="wait"
             // Fires when all exiting nodes have completed animating out
             onExitComplete={() => null}
           >
@@ -55,6 +55,7 @@ const Home: NextPage = () => {
         <div className=" col-span-8  lg:col-span-6 p-4 flex items-center justify-center rounded-lg ">
           <div className=" w-40 h-40  lg:w-64 lg:h-64 xl:w-80 xl:h-80 relative">
             <Image
+              priority={true}
               className="rounded-full"
               alt="profile-picture"
               src={"/profile.jpg"}
