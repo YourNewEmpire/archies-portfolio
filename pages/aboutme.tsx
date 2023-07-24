@@ -1,9 +1,9 @@
 import type { NextPage } from "next";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import skillList from "../lib/content/about/skills";
 import certs from "../lib/content/about/certs";
 import jobs from "../lib/content/about/jobs";
-import RevealBox from "../components/RevealBox";
 import MoreDetails from "../components/Buttons/MoreDetails";
 import {
   opacityAnimation,
@@ -61,10 +61,10 @@ const AboutMe: NextPage = () => {
           </div>
         </div>
       </section>
-      <RevealBox
-        initialObj={opacityInitial}
-        animateObj={opacityAnimation}
-        exitObj={opacityExit}
+      <motion.div
+        initial={opacityInitial}
+        whileInView={opacityAnimation}
+        exit={opacityExit}
       >
         <section className="flex flex-col items-center justify-center text-center min-h-screen space-y-8 lg:space-y-24">
           <h1 className="text-2xl sm:text-3xl lg:text-5xl xl:text-7xl text-emerald-300 font-title ">
@@ -92,11 +92,11 @@ const AboutMe: NextPage = () => {
             ))}
           </div>
         </section>
-      </RevealBox>
-      <RevealBox
-        initialObj={opacityInitial}
-        animateObj={opacityAnimation}
-        exitObj={opacityExit}
+      </motion.div>
+      <motion.div
+        initial={opacityInitial}
+        whileInView={opacityAnimation}
+        exit={opacityExit}
       >
         <section className="flex flex-col items-center justify-center text-center min-h-screen space-y-8 lg:space-y-24">
           <h1 className="text-2xl sm:text-3xl lg:text-5xl xl:text-7xl text-emerald-300 font-title">
@@ -127,11 +127,11 @@ const AboutMe: NextPage = () => {
             />
           </div>
         </section>
-      </RevealBox>
-      <RevealBox
-        initialObj={opacityInitial}
-        animateObj={opacityAnimation}
-        exitObj={opacityExit}
+      </motion.div>
+      <motion.div
+        initial={opacityInitial}
+        whileInView={opacityAnimation}
+        exit={opacityExit}
       >
         <section className="flex flex-col items-center justify-center text-center min-h-screen space-y-8 lg:space-y-24">
           <h1 className="text-2xl sm:text-3xl lg:text-5xl xl:text-7xl text-emerald-300 font-title">
@@ -150,7 +150,7 @@ const AboutMe: NextPage = () => {
             </ol>
           </div>
         </section>
-      </RevealBox>
+      </motion.div>
     </>
   );
 };
