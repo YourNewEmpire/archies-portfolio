@@ -5,7 +5,7 @@ const Backdrop = ({ children, onClick }) => {
     <motion.div
       onClick={onClick}
       className="
-      top-0 left-0 absolute flex 
+      bottom-0 left-0  fixed flex 
       justify-center items-center 
       w-full h-full z-40 
       bg-opacity-75 bg-slate-700"

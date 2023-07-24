@@ -26,7 +26,7 @@ const Modal = ({ handleClose, children }) => {
     <Backdrop onClick={handleClose}>
       <motion.div
         onClick={(e) => e.stopPropagation()}
-        className="rounded-lg bg-slate-700 ring-2 ring-emerald-300 p-6"
+        className="rounded-lg bg-slate-700 ring-2 ring-emerald-300 p-6 "
         variants={dropIn}
         initial="hidden"
         animate="visible"
@@ -38,7 +38,7 @@ const Modal = ({ handleClose, children }) => {
           whileTap={{ scale: 0.9 }}
           onClick={handleClose}
           className="
-            w-64 m-12 rounded-2xl font-semibold
+          p-2 lg:p-3 rounded-2xl font-semibold
           bg-emerald-300 text-slate-700 
             "
         >
