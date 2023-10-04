@@ -60,6 +60,7 @@ const Home: NextPage = () => {
               alt="profile-picture"
               src={"/profile.jpg"}
               fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
         </div>

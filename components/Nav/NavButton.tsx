@@ -16,10 +16,10 @@ const NavButton = ({ text, link }: NavButtonProps) => {
         <motion.button
           onMouseEnter={() => onEnter()}
           onMouseLeave={() => onLeave()}
-          className="block w-full py-2 lg:py-8 px-2 lg:px-8  hover:cursor-pointer "
+          className="block w-full py-2 lg:py-8 px-2 lg:px-8 hover:cursor-pointer "
         >
           <p
-            className={` text-left transition-all duration-200 ease-in-out  ${
+            className={` text-left transition-all duration-200 ease-in-out ${
               isHovered ? "translate-x-[16px]" : ""
             }`}
           >

@@ -4,8 +4,8 @@ export const opacityInitial = {
 export const opacityAnimation = {
   opacity: 1,
   transition: {
-    delay: 0.2,
-    duration: 0.7,
+    delay: 0.3,
+    duration: 0.75,
   },
 };
 export const opacityExit = {

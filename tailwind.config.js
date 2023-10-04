@@ -62,7 +62,6 @@ module.exports = {
         purple: colors.violet,
         amber: colors.amber,
         fuchsia: colors.fuchsia,
-        moralis: "#c5fa00",
       },
       keyframes: {
         pop: {

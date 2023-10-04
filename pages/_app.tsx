@@ -3,7 +3,7 @@ import React, { ComponentType } from "react";
 import type { AppProps } from "next/app";
 import router from "next/app";
 import { useRouter } from "next/dist/client/router";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 import Layout from "../components/Layout";
 

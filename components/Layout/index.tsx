@@ -14,7 +14,7 @@ const Layout = ({ children }: Childs): JSX.Element => {
         <title>Archies Portfolio</title>
         <meta property="og:type" content={"website"} />
       </Head>
-      <div className="relative min-h-screen flex">
+      <div className="relative min-h-screen flex ">
         <Nav />
         <div className="p-10 flex-1 bg-slate-700">{children}</div>
       </div>

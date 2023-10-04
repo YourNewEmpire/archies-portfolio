@@ -11,14 +11,13 @@ const Nav = () => {
 
   //todo - clean up after setting up responsive dropdown
   return (
-    <div
-      className="z-30 
+    <header
+      className="z-10
       bg-gradient-to-br from-emerald-300 via-emerald-500 to-emerald-700 
-      rounded-r-lg 
-      text-slate-700 text-left
+      rounded-r-lg text-left
       text-xs md:text-2xl xl:text-4xl font-semibold
       flex flex-col items-center justify-between 
-      
+      text-black
       "
     >
       <nav
@@ -48,7 +47,7 @@ const Nav = () => {
           </div>
         ))}
       </nav>
-    </div>
+    </header>
   );
 };
 
