@@ -17,7 +17,7 @@ const Nav = () => {
       rounded-r-lg text-left
       text-xs md:text-2xl xl:text-4xl font-semibold
       flex flex-col items-center justify-between 
-      text-black
+      
       "
     >
       <nav

@@ -42,7 +42,7 @@ const AboutMe: NextPage = () => {
               Archie Smyth
             </h1>
             <p className="text-base lg:text-lg text-emerald-500">
-              Full Stack Web Developer
+              Fullstack JS Developer
             </p>
           </div>
           <div
@@ -61,6 +61,29 @@ const AboutMe: NextPage = () => {
           </div>
         </div>
       </section>
+      <motion.div
+        initial={opacityInitial}
+        whileInView={opacityAnimation}
+        exit={opacityExit}
+      >
+        <section className="flex flex-col items-center justify-center text-center min-h-screen space-y-8 lg:space-y-24">
+          <h1 className="text-2xl sm:text-3xl lg:text-5xl xl:text-7xl text-emerald-300 font-title">
+            {" "}
+            Experience
+          </h1>
+
+          <div className="flex flex-col justify-center items-center space-y-8 xl:space-y-12">
+            <ol className="list-disc list-inside text-lg xl:text-2xl text-emerald-300 text-left grid grid-flow-col grid-cols-1">
+              {jobs.map((job, index) => (
+                <li key={index}>
+                  {" "}
+                  <span className="font-semibold">{job.name}.</span> {job.text}
+                </li>
+              ))}
+            </ol>
+          </div>
+        </section>
+      </motion.div>
       <motion.div
         initial={opacityInitial}
         whileInView={opacityAnimation}
@@ -125,29 +148,6 @@ const AboutMe: NextPage = () => {
                 "https://drive.google.com/drive/folders/1mA4y17s9IqFUFDr3V1OYaq5gPBrxUsBV?usp=sharing"
               }
             />
-          </div>
-        </section>
-      </motion.div>
-      <motion.div
-        initial={opacityInitial}
-        whileInView={opacityAnimation}
-        exit={opacityExit}
-      >
-        <section className="flex flex-col items-center justify-center text-center min-h-screen space-y-8 lg:space-y-24">
-          <h1 className="text-2xl sm:text-3xl lg:text-5xl xl:text-7xl text-emerald-300 font-title">
-            {" "}
-            Experience
-          </h1>
-
-          <div className="flex flex-col justify-center items-center space-y-8 xl:space-y-12">
-            <ol className="list-disc list-inside text-lg xl:text-2xl text-emerald-300 text-left grid grid-flow-col grid-cols-1">
-              {jobs.map((job, index) => (
-                <li key={index}>
-                  {" "}
-                  <span className="font-semibold">{job.name}.</span> {job.text}
-                </li>
-              ))}
-            </ol>
           </div>
         </section>
       </motion.div>

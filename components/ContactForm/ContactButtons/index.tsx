@@ -1,6 +1,5 @@
 import React from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { MailIcon } from "@heroicons/react/solid";
+import { motion } from "framer-motion";
 import { AiFillLinkedin, AiFillTwitterSquare } from "react-icons/ai";
 const ContactButtons = () => {
   return (

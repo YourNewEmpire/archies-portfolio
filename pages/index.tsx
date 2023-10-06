@@ -20,6 +20,18 @@ const Home: NextPage = () => {
         </h1>
       </div>
       <div className="grid grid-flow-row grid-cols-8 lg:grid-cols-12 gap-8 lg:gap-12 xl:gap-20 justify-center items-center">
+        <div className=" col-span-8  lg:col-span-6 p-4 flex items-center justify-center rounded-lg ">
+          <div className=" w-40 h-40  lg:w-64 lg:h-64 xl:w-80 xl:h-80 relative">
+            <Image
+              priority={true}
+              className="rounded-full"
+              alt="profile-picture"
+              src={"/profile.jpg"}
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            />
+          </div>
+        </div>
         <div className="col-span-8 lg:col-span-6 font-body text-emerald-300 text-base lg:text-xl text-center flex flex-col space-y-2 items-center justify-center">
           <p>{introObject.desc}</p>
 
@@ -52,18 +64,7 @@ const Home: NextPage = () => {
             )}
           </AnimatePresence>
         </div>
-        <div className=" col-span-8  lg:col-span-6 p-4 flex items-center justify-center rounded-lg ">
-          <div className=" w-40 h-40  lg:w-64 lg:h-64 xl:w-80 xl:h-80 relative">
-            <Image
-              priority={true}
-              className="rounded-full"
-              alt="profile-picture"
-              src={"/profile.jpg"}
-              fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            />
-          </div>
-        </div>
+
         <div className=" col-span-8 lg:col-span-12 font-body text-emerald-300 text-3xl ">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 xl:gap-8">
             {cardItems.map((item, index) => (

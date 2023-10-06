@@ -1,13 +1,13 @@
-import type { NextPage } from 'next'
+import type { NextPage } from "next";
 
-import ContactButtons from '../components/ContactForm/ContactButtons'
+import ContactButtons from "../components/ContactForm/ContactButtons";
 
-const Contain: NextPage = () => {
+const Contact: NextPage = () => {
   return (
-    <div className='flex flex-col items-center justify-center' >
-     <ContactButtons/>
+    <div className="flex flex-col items-center justify-center">
+      <ContactButtons />
     </div>
-  )
-}
+  );
+};
 
-export default Contain
+export default Contact;
