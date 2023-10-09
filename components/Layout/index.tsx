@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-import React from "react";
+import React, { ReactNode } from "react";
 import "tailwindcss/tailwind.css";
 import { Childs } from "../../interfaces/children";
 import Nav from "../Nav";

@@ -1,5 +1,5 @@
-import React, {ReactChild, ReactChildren, } from 'react'
+import { ReactNode } from "react";
 
 export interface Childs {
-      children?: ReactChild[] | ReactChildren[] | ReactChild | ReactChildren;
+  children?: ReactNode;
 }
